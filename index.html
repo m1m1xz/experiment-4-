@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A visual guide to website SEO, semantic HTML and web accessibility.">
+    <title>Web Club — Make the Web Better</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="#home" class="logo">webclub<span>.</span></a>
+            <div class="nav-links">
+                <a href="#explore">Explore</a>
+                <a href="#about">About</a>
+            </div>
+            <a href="#explore" class="nav-button">Start learning ↗</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <p class="eyebrow">THE INTERNET, BUT BETTER.</p>
+                <h1>Make your<br>website <span>matter.</span></h1>
+                <p class="intro">Good websites aren't just pretty. They're easy to find, simple to use, and built for everyone.</p>
+                <a href="#explore" class="main-button">Find your starting point <span>↗</span></a>
+                <p class="small-note">3 essentials. Endless possibilities.</p>
+            </div>
+
+            <div class="hero-art" aria-label="Illustration of a browser window">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="browser">
+                    <div class="browser-top">
+                        <span></span><span></span><span></span>
+                        <p>your-next-website.com</p>
+                    </div>
+                    <div class="browser-content">
+                        <p class="browser-label">HELLO, INTERNET.</p>
+                        <div class="mock-line long"></div>
+                        <div class="mock-line short"></div>
+                        <div class="mock-button"></div>
+                        <div class="mock-circle">W</div>
+                    </div>
+                </div>
+                <div class="sticker">THOUGHTFULLY<br>BUILT.</div>
+            </div>
+        </section>
+
+        <section class="explore" id="explore">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">THE STARTER PACK / 01—03</p>
+                    <h2>Three ways to level up.</h2>
+                </div>
+                <p>Pick a topic. Start small.<br>Build something better.</p>
+            </div>
+
+            <label class="search-label" for="topicSearch">Looking for something specific?</label>
+            <input type="search" id="topicSearch" placeholder="Search SEO, HTML, accessibility...">
+
+            <div class="topic-grid" id="topicGrid">
+                <article class="topic-card pink" data-keywords="seo search engine title description google">
+                    <div class="card-top"><span>01 / DISCOVER</span><span class="card-symbol">↗</span></div>
+                    <div class="card-graphic graphic-one"><span>SEARCH</span><div class="search-circle"></div></div>
+                    <h3>Get found.</h3>
+                    <p>Help search engines understand your website with useful titles, descriptions, and clear content.</p>
+                    <a href="#about">Explore SEO <span>→</span></a>
+                </article>
+
+                <article class="topic-card yellow" data-keywords="html semantic headings structure tags">
+                    <div class="card-top"><span>02 / ORGANIZE</span><span class="card-symbol">↗</span></div>
+                    <div class="card-graphic graphic-two"><span>&lt;html&gt;</span><span>&lt;main&gt;</span><span>&lt;article&gt;</span></div>
+                    <h3>Give it structure.</h3>
+                    <p>Use semantic HTML and logical headings so browsers and people can understand your content.</p>
+                    <a href="#about">Explore HTML <span>→</span></a>
+                </article>
+
+                <article class="topic-card blue" data-keywords="accessibility inclusive keyboard contrast labels screen readers">
+                    <div class="card-top"><span>03 / INCLUDE</span><span class="card-symbol">↗</span></div>
+                    <div class="card-graphic graphic-three"><span>FOR</span><span>EVERY</span><span>ONE.</span></div>
+                    <h3>Make room for all.</h3>
+                    <p>Improve contrast, keyboard navigation, and labels to make your website more accessible.</p>
+                    <a href="#about">Explore accessibility <span>→</span></a>
+                </article>
+            </div>
+            <p id="searchMessage" class="search-message" aria-live="polite"></p>
+        </section>
+
+        <section class="about" id="about">
+            <div>
+                <p class="eyebrow">THE BIG IDEA</p>
+                <h2>Small details.<br><span>Better internet.</span></h2>
+            </div>
+            <p>Every meaningful website starts with a clear structure, thoughtful content, and a little attention to the people using it. That's what good web design is all about.</p>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#home" class="logo">webclub<span>.</span></a>
+        <p>Designed with purpose. Built for everyone.</p>
+        <a href="#home">Back to top ↑</a>
+    </footer>
+
+</body>
+</html>
